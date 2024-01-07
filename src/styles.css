@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  
+    background: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85,88,218,1), rgba(95,209,249,1) );
+  
+  }

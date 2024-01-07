@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="card">
+    <ng-container>
+        <thead>
+            <th>Amount:</th>
+            <th>From:</th>
+            <th>to:</th>
+            <th>Result:</th>
+        </thead>
+        <tr *ngFor="let search of searchToDisplay">
+            <td>{{ search.amount }}</td>
+            <td>{{ search.from.name }}</td>
+            <td>{{ search.to.name }}</td>
+            <td>{{ search.result }}</td>
+        </tr>
+    </ng-container>
+</div>
+</div>

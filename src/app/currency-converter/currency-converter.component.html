@@ -1,0 +1,52 @@
+<div class="container">
+
+  <div class="card">
+
+    <h1>{{title}}</h1>
+    <div *ngIf="isDataAvailable">
+      <!-- <form name="form-exchange" (ngSubmit)="onSubmit()"> -->
+      <label for="amount-name">Amount: </label>
+      <div class="form-currency">
+        <div class="input-amount input-field">
+          <!-- <span class="prefix">{{from_symbol}}</span> -->
+          <input required [(ngModel)]="amount_value" lang="en-US" type="number" name="amount" #amount_input
+            placeholder="Amount" step="0.01" (change)="changeAmountValue()">{{amount_value}}
+        </div>
+
+        <label for="from-name">From: </label>
+        <app-currency-drop (selectedrateEvent)="selectFrom($event)" [rates]="rates"
+          [selectorId]="_from.name"></app-currency-drop>
+
+        <label for="to-name">To: </label>
+        <app-currency-drop (selectedrateEvent)="selectTo($event)" [rates]="rates"
+          [selectorId]="to.name"></app-currency-drop>
+      </div>
+      <!-- </form> -->
+      <!-- <input  type="button" id="btnConvert" (click)="btnConvertClick()" value="המר"> -->
+
+      <!-- <label  >{{result.base}}</label> -->
+
+
+
+
+      <div class="result-currency" *ngIf="isResult">
+        <div class="result-from">
+          {{resultFrom}}
+        </div>
+
+        <div class="result-to">
+          {{resultTo}}
+        </div>
+        <div class="result-info">
+          {{resultInfo}}
+        </div>
+      </div>
+    </div>
+    <div class="lds-ellipsis" *ngIf="!isDataAvailable && !failedToLoad">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>

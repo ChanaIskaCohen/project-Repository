@@ -1,0 +1,48 @@
+/* AppComponent's private CSS styles */
+
+
+.container{
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  min-height: 570px;
+  max-width: none;
+  @include extra-small {
+    background-color: $dirty-white;
+  }
+
+  @include medium-down{
+    min-height: 710px;
+  }
+}
+
+h1 {
+    margin-bottom: 0;
+  }
+  nav a {
+    padding: 1rem;
+    text-decoration: none;
+    display: inline-block;
+     color:white;
+    /* border-radius: 4px; */
+  }
+  
+  nav a:hover {
+    color: white;
+  
+    background-color: #42545C;
+  }
+  nav a:active {
+    background-color: black;
+  }
+  .header {
+    height: 20%;
+    border-bottom: 1px solid #EEE;
+    background-color: #0f18d3;
+    width:100%;
+    }

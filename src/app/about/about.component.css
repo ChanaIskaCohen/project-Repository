@@ -1,0 +1,42 @@
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+  
+    background-color: #EFEFEFFF;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 0 10px 1px rgba(0 0 0 / 20%);
+    border-radius: 15px;
+  
+    th {
+      font-weight: 800;
+      margin-bottom: 20px;
+  
+      /* @include large-up {
+        margin-bottom: 60px;
+      }
+  
+      @include extra-small {
+        margin-bottom: 40px;
+      } */
+    }
+  }

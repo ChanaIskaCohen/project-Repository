@@ -1,0 +1,15 @@
+
+<div class="dropdown-item">
+<select #selectItem (change)="selectRate($event)" >
+    <!-- <option *ngFor="let rate of rates" [value]="[rate.name]">{{rate.name}}</option> -->
+
+    <!-- <option *ngFor="let enum of rates | keyvalue">
+        {{ enum.key }} - {{ enum.value}}
+    </option> -->
+
+    <option *ngFor="let enum of rates | keyvalue" [value]="[enum.key]" [selected]="enum.key === selectorId ? true : null">
+        {{ enum.key }}
+    </option>
+</select>
+</div>
+

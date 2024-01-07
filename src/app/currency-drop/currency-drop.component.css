@@ -1,0 +1,29 @@
+
+/* 
+  .custom-select {
+    min-width: 20px;
+    position: -webkit-sticky;
+  } */
+  
+  select {
+   
+    font-weight:700;
+    padding:5px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: sana-serfi;
+  }
+  
+select:focus{
+  outline:none;
+}
+
+option{
+
+  font-family:'Times New Roman', Times, serif;
+  font-weight:700;
+  color:blueviolet;
+
+}

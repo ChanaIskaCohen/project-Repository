@@ -1,27 +1,44 @@
 # CurranctConvertApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+<h1 align="center"> Angular-Currency-Converter  </h1>
+<div align="center">
 
-## Development server
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)
+![workflow](https://github.com/daniel-szulc/angular-currency-converter/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## About
 
-## Code scaffolding
+💱 A simple currency converter created using Angular 17 💵.
+The project gets the currency rate from [https://exchangeratesapi.io].
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Screenshots
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img src="/screenShoot.png" alt="Currency converter"/>
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Allows you to quickly convert currencies in real time
+- Saves the selected currencies with the entered amount and save lastet search and result
+- Bootstrap feature
 
-## Running end-to-end tests
+## Resources
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [ExchangeRate-API](https://api.exchangeratesapi.io). 
+Currency rate source. [`https://open.er-api.com/v6/latest/USD`](https://open.er-api.com/v6/latest/USD)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Try It
+
+🔗 [daniel-szulc.github.io/angular-currency-converter](https://daniel-szulc.github.io/angular-currency-converter)
+
+## License
+
+
