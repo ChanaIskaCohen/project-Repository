@@ -37,7 +37,7 @@ Currency rate source. [`https://open.er-api.com/v6/latest/USD`](https://open.er-
 
 ## Try It
 
-🔗 [daniel-szulc.github.io/angular-currency-converter](https://daniel-szulc.github.io/angular-currency-converter)
+
 
 ## License
 
