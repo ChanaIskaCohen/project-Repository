@@ -39,14 +39,16 @@ export class CurrencyConverterComponent {
   isDataAvailable: boolean = false;
   keyValueArray: { rate: string; name: any; }[] | undefined;
 failedToLoad: boolean = false;
+  lastUpdate: string | undefined;
 
   constructor(private currancyService: CurrancyserviceService, private saveSearchService:SaveSearchService) { }
   
   onSubmit(): void {
+    alert("onSubmit");
     this.exchange();
     this.isResult= true;
-    // var date = new Date(this.service.getLastUpdate());
-    // this.lastUpdate = date.toLocaleString()  + " UTC";
+    //  var date = new Date(this.currancyService.getCurrencies());
+    //  this.lastUpdate = date.toLocaleString()  + " UTC";
   }
   ngOnInit(): void {
 
@@ -65,6 +67,8 @@ failedToLoad: boolean = false;
        
         this.currancyService.result=data;
 
+        var date = new Date(data.date);
+        this.lastUpdate = date.toLocaleString()  + " UTC";
 
         this.isDataAvailable = true
   
@@ -111,6 +115,11 @@ failedToLoad: boolean = false;
       this.exchange();
     }
 
+  }
+
+  
+  windowResize(): void{
+    // this.submitBtn.nativeElement.style.width = this.formExchange.nativeElement.style.width;
   }
 
 

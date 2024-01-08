@@ -1,8 +1,8 @@
 
 <div class="container">
     <div class="card">
-    <ng-container>
-        <thead>
+    <ng-container *ngIf="searchToDisplay?.length>0" >
+        <thead >
             <th>Amount:</th>
             <th>From:</th>
             <th>to:</th>
@@ -15,5 +15,6 @@
             <td>{{ search.result }}</td>
         </tr>
     </ng-container>
+    <span *ngIf="searchToDisplay?.length==0">Not Convert Yet!</span>
 </div>
 </div>

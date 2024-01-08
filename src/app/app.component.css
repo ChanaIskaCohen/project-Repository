@@ -12,13 +12,7 @@
   width: 100%;
   min-height: 570px;
   max-width: none;
-  @include extra-small {
-    background-color: $dirty-white;
-  }
 
-  @include medium-down{
-    min-height: 710px;
-  }
 }
 
 h1 {

@@ -27,3 +27,13 @@ option{
   color:blueviolet;
 
 }
+.dropdown-item{
+  padding-inline: 8px;
+  display: flex;
+  align-items: center;
+
+  div{
+    font-weight: 400;
+  }
+
+}

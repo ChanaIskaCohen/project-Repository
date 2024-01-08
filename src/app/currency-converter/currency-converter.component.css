@@ -32,6 +32,15 @@
   }
 }
 
+.lastUpdate{
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-weight: 400;
+  color: #3a3636;
+
+}
+
   .result-currency {
     margin-block: 20px;
     width: 100%;
