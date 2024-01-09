@@ -1,20 +1,24 @@
+<div class="container" *ngIf="searchToDisplay?.length>0">
+    <div class="col-lg-12">
+        <p>the lastest conert</p>
+    </div>
+    <div class="card" class="col-lg-12">
+        <ng-container>
+            <thead class="row">
+                <th class="col-lg-3">Amount:</th>
+                <th class="col-lg-3">From:</th>
+                <th class="col-lg-3">to:</th>
+                <th class="col-lg-3">Result:</th>
+            </thead>
+            <tr *ngFor="let search of searchToDisplay" class="row">
+                <td class="col-lg-3">{{ search.amount }}</td>
+                <td class="col-lg-3">{{ search.from.name }}</td>
+                <td class="col-lg-3">{{ search.to.name }}</td>
+                <td class="col-lg-3">{{ search.result }}</td>
+            </tr>
+        </ng-container>
 
-<div class="container">
-    <div class="card">
-    <ng-container *ngIf="searchToDisplay?.length>0" >
-        <thead >
-            <th>Amount:</th>
-            <th>From:</th>
-            <th>to:</th>
-            <th>Result:</th>
-        </thead>
-        <tr *ngFor="let search of searchToDisplay">
-            <td>{{ search.amount }}</td>
-            <td>{{ search.from.name }}</td>
-            <td>{{ search.to.name }}</td>
-            <td>{{ search.result }}</td>
-        </tr>
-    </ng-container>
-    <span *ngIf="searchToDisplay?.length==0">Not Convert Yet!</span>
-</div>
-</div>
+    </div>
+   
+</div> 
+<div lass="col-lg-12"><span *ngIf="searchToDisplay?.length==0">Not Convert Yet!</span></div>

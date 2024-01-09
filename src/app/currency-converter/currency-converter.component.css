@@ -24,7 +24,7 @@
 
     /* @include large-up {
       margin-bottom: 60px;
-    }
+          }
 
     @include extra-small {
       margin-bottom: 40px;
@@ -46,7 +46,7 @@
     width: 100%;
     position: relative;
 
-    /* @include extra-small {
+    @include extra-small {
   width: 260px;
   }
   @include small-up {
@@ -54,7 +54,7 @@
   }
   @include medium-up {
     width: 100%;
-  } */
+  }
 
     .result-from {
       font-weight: 800;

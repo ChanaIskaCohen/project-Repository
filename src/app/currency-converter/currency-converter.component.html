@@ -17,8 +17,11 @@
         <app-currency-drop (selectedrateEvent)="selectFrom($event)" [rates]="rates"
           [selectorId]="_from.name"></app-currency-drop>
 
-        <label>To: </label><app-currency-drop (selectedrateEvent)="selectTo($event)" [rates]="rates"
+
+        <label>To: </label>
+        <app-currency-drop (selectedrateEvent)="selectTo($event)" [rates]="rates"
           [selectorId]="to.name"></app-currency-drop>
+
       </div>
     </div>
 

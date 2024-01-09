@@ -2,7 +2,7 @@ table, th , td {
     border: 1px solid grey;
     border-collapse: collapse;
     padding: 5px;
-  }
+      }
   
   table tr:nth-child(odd) {
     background-color: #f1f1f1;
@@ -27,18 +27,18 @@ table, th , td {
     box-shadow: 0 0 10px 1px rgba(0 0 0 / 20%);
     border-radius: 15px;
   
-    th {
+   th {
       font-weight: 800;
       margin-bottom: 20px;
   
-      /* @include large-up {
+      @include large-up {
         margin-bottom: 60px;
       }
   
       @include extra-small {
         margin-bottom: 40px;
-      } */
+      }
     }
-  }
+   }
 
  
